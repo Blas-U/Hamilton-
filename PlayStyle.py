@@ -13,7 +13,16 @@ for i in s:
     print (len(s))
 nlines = len(s)
 aveWords = totalwords / nlines
-print (aveWords)
+print ('averageWords', aveWords)
+lc=[]
+for i in s:
+    lc.append(i.lower())
+    lc[-1]=lc[-1].replace(',','')
+    lc[-1]=lc[-1].replace('(','')
+    lc[-1]=lc[-1].replace(')','')
+    print(lc[-1])
+    
+
 
 
 
